@@ -1,0 +1,29 @@
+2022-12-30 02:34:05.309  INFO 19076 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 11.0.13 on Beast with PID 19076 (started by allou in D:\Spring-Boot\master\software_traceability\spooned)
+2022-12-30 02:34:05.313  INFO 19076 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2022-12-30 02:34:05.356  INFO 19076 --- [JavaFX-Launcher] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-30 02:34:05.820  INFO 19076 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-12-30 02:34:05.909  INFO 19076 --- [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 2 MongoDB repository interfaces.
+2022-12-30 02:34:06.182  INFO 19076 --- [JavaFX-Launcher] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-12-30 02:34:06.236  INFO 19076 --- [cluster-rtt-ClusterId{value='63ae400edf0c366d35715378', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:209}] to localhost:27017
+2022-12-30 02:34:06.236  INFO 19076 --- [cluster-ClusterId{value='63ae400edf0c366d35715378', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:210}] to localhost:27017
+2022-12-30 02:34:06.238  INFO 19076 --- [cluster-ClusterId{value='63ae400edf0c366d35715378', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20211900}
+2022-12-30 02:34:06.639  INFO 19076 --- [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 1.745 seconds (JVM running for 3.969)
+2022-12-30 02:34:25.191  INFO 19076 --- [JavaFX Application Thread] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:211}] to localhost:27017
+2022-12-30 02:34:25.226  INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.UserServiceImpl      : User authenticated
+2022-12-30 02:34:26.531 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : getAllProducts method called
+2022-12-30 02:34:26.856 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.graphics.utils.SwitchScreen  : Switched to Product screen
+2022-12-30 02:34:43.383 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Add new product
+2022-12-30 02:34:43.389 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Nom: test Prix: 12500.0 Date: Sat Jan 07 00:00:00 CET 2023
+2022-12-30 02:34:43.390 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Add new product
+2022-12-30 02:34:43.391 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : createProduct method called
+2022-12-30 02:34:43.422 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Product created
+2022-12-30 02:34:46.199 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : getAllProducts method called
+2022-12-30 02:35:36.797 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : getProductById method called
+2022-12-30 02:35:36.801 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : product called Samsung s21 ultra price 16000.0
+2022-12-30 02:35:36.803 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Product found
+2022-12-30 02:35:52.530 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Nom: Samsung s21 ultra Prix: 160550.0 Date: Fri Dec 30 00:00:00 CET 2022
+2022-12-30 02:35:52.530 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Update product
+2022-12-30 02:35:52.531 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : updateProduct method called
+2022-12-30 02:35:52.545 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.u.g.c.g.ProductUiController        : Product updated
+2022-12-30 02:35:53.887 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] t.s.t.services.impl.ProductServiceImpl   : getAllProducts method called
+2022-12-30 02:36:44.225 allouane.hatim.ha11@gmail.com INFO 19076 --- [JavaFX Application Thread] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:211}] to localhost:27017 because the pool has been closed.
