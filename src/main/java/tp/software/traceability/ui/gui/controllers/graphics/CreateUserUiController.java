@@ -73,6 +73,7 @@ public class CreateUserUiController {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, ("User " + userResponse.getName()) + " created", ButtonType.CANCEL);
             alert.showAndWait();
         } catch (UserServiceException userServiceException) {
+            LOGGER.error("Error creating user : {}", userServiceException.getMessage());
             Alert alert = new Alert(Alert.AlertType.ERROR, userServiceException.getMessage(), ButtonType.CANCEL);
             alert.showAndWait();
         }
@@ -90,7 +91,7 @@ public class CreateUserUiController {
             stage.setScene(new Scene(root, 600, 400));
             stage.show();
         } catch (Exception e) {
-            LOGGER.error("Error loading login user UI", e);
+            LOGGER.error("Error loading login user UI : {}", e.getMessage());
         }
     }
 

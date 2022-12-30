@@ -72,6 +72,7 @@ public class LoginUiController {
                 alert.showAndWait();
             }
         } catch (UserServiceException e) {
+            LOGGER.error("Error while authenticating user : {}", e.getMessage());
             Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.CANCEL);
             alert.showAndWait();
         }
@@ -82,7 +83,7 @@ public class LoginUiController {
             SwitchScreen switchScreen = SwitchScreen.builder().applicationContext(applicationContext).resource(resource).title(title).build();
             switchScreen.switchScreen(event);
         } catch (SwitchScreenException e) {
-            LOGGER.error("Error while switching to product ui", e);
+            LOGGER.error("Error while switching to product ui : {}", e.getMessage());
         }
     }
 
