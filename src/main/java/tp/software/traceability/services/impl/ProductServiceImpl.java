@@ -49,7 +49,7 @@ public class ProductServiceImpl implements ProductService {
         logger.info("createProduct method called");
         ModelMapper modelMapper = new ModelMapper();
         ProductEntity productEntity = modelMapper.map(productDto, ProductEntity.class);
-        productEntity.setId(generateUtils.generateNumericProductId(10));
+        productEntity.setId(generateUtils.generateNumericProductId(3));
         ProductEntity savedProduct = productRepository.save(productEntity);
         return modelMapper.map(savedProduct, ProductDto.class);
     }
